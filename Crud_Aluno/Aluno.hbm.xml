@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" >
+  <class name="Crud_Aluno.Aluno, Crud_Aluno" table="tblAlunos" lazy="true">
+
+
+    <id name="_matriculaAluno" not-null="true" sql-type="INTEGER"/>
+    <property name="_nomeAluno" type="AnsiString" column="NomeAluno" not-null="true" access="field"/>
+    <property name="_dataNascAluno" type="date" column="DataNascAluno" access="field"/>
+    <property name="_enderecoAluno" type="AnsiString" column="EnderecoAluno" access="field"/>
+    <property name="_nomePaiAluno" type="AnsiString" column="NomePaiAluno" access="field"/>
+    <property name="_nomeMaeAluno" type="AnsiString" column="NomeMaeAluno" access="field" />
+    <property name="_contatoMaeAluno" type="AnsiString" column="ContatoMaeAluno" access="field"/>
+    <property name="_contatoPaiAluno" type="AnsiString" column="ContatoPaiAluno" access="field" />
+    <property name="_emailPaiAluno" type="AnsiString" column="EmailPaiAluno" access="field" />
+    <property name="_emailMaeAluno" type="AnsiString" column="EmailMaeAluno" access="field" />
+    <property name="_carteirinhaEsquecida" type="Int32" column="CarteirinhaEsquecida" access="field" />
+    <property name="_pedidoCarteirinha" type="yes_no" column="PedidoCarteirinha" access="field"/>
+
+  </class>
+</hibernate-mapping>
