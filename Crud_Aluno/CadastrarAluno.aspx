@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Cadastro de Alunos</title>
     <link href="Content/style.css" rel="stylesheet" />
     <link href="Content/bootstrap-def.css" rel="stylesheet" />
 </head>
@@ -44,7 +44,7 @@
                 <div class="row">
                     <div class="form-group col-lg-2">
                         <label for="exampleInputEmail1">Data de nascimento</label>
-                        <input type="date" class="form-control" id="DataNascAluno">
+                        <input type="date" class="form-control" id="DataNascAluno"/>
                     </div>
                     <div class="form-group col-lg-2">
                         <label for="ContatoMaeAluno">Contato da mãe</label>
