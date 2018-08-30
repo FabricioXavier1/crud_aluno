@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Crud_Aluno
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class CadastrarAluno : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
