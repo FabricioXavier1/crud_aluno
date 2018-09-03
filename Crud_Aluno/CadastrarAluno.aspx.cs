@@ -12,7 +12,6 @@ namespace Crud_Aluno
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnEnviar.Click += new EventHandler(this.btnEnviar_Click);
         }
         
         protected void btnEnviar_Click(object sender, EventArgs e)
