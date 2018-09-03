@@ -17,8 +17,6 @@ namespace Crud_Aluno
         private string _contatoMaeAluno;
         private string _emailPaiAluno;
         private string _emailMaeAluno;
-        private int _carteirinhaEsquecida;
-        private bool _pedidoCarteirinha;
 
         public virtual int MatriculaAluno
         {
@@ -77,18 +75,6 @@ namespace Crud_Aluno
         {
             get { return _emailMaeAluno; }
             set { _emailMaeAluno = value; }
-        }
-
-        public virtual int CarteirinhaEsquecida
-        {
-            get { return _carteirinhaEsquecida; }
-            set { _carteirinhaEsquecida = value; }
-        }
-
-        public virtual bool PedidoCarteirinha
-        {
-            get { return _pedidoCarteirinha; }
-            set { _pedidoCarteirinha = value; }
         }
     }
 }

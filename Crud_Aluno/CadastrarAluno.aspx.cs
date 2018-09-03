@@ -12,7 +12,26 @@ namespace Crud_Aluno
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+            btnEnviar.Click += new EventHandler(this.btnEnviar_Click);
+        }
+        
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            Aluno aluno = new Aluno();
+            AlunoRepository a = new AlunoRepository();
+
+            aluno.MatriculaAluno = 1;
+            aluno.NomeAluno = NomeAluno.Text;
+            aluno.EnderecoAluno = EnderecoAluno.Text;
+            aluno.NomeMaeAluno = NomeMaeAluno.Text;
+            aluno.NomePaiAluno = NomePaiAluno.Text;
+            aluno.EmailMaeAluno = EmailMaeAluno.Text;
+            aluno.EmailPaiAluno = EmailPaiAluno.Text;
+            aluno.DataNascAluno = DateTime.Parse(DataNascAluno.Text);
+            aluno.ContatoMaeAluno = ContatoMaeAluno.Text;
+            aluno.ContatoPaiAluno = ContatoPaiAluno.Text;
+
+            a.Salvar(aluno);
         }
     }
 }
