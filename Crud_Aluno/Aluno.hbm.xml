@@ -3,7 +3,9 @@
   <class name="Crud_Aluno.Aluno, Crud_Aluno" table="tblAlunos" lazy="true">
 
 
-    <id name="_matriculaAluno" type="Int32" column="MatriculaAluno" access="field"/>
+    <id name="_matriculaAluno" type="Int32" column="MatriculaAluno" access="field" >
+      <generator class="native" />
+    </id>
     <property name="_nomeAluno" type="AnsiString" column="NomeAluno" access="field"/>
     <property name="_dataNascAluno" type="date" column="DataNascAluno" access="field" />
     <property name="_enderecoAluno" type="AnsiString" column="EnderecoAluno" access="field"/>

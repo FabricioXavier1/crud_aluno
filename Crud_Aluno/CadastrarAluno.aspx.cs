@@ -16,21 +16,29 @@ namespace Crud_Aluno
         
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            Aluno aluno = new Aluno();
-            AlunoRepository a = new AlunoRepository();
+            try
+            {
+                Aluno aluno = new Aluno();
+                AlunoRepository a = new AlunoRepository();
 
-            aluno.MatriculaAluno = 1;
-            aluno.NomeAluno = NomeAluno.Text;
-            aluno.EnderecoAluno = EnderecoAluno.Text;
-            aluno.NomeMaeAluno = NomeMaeAluno.Text;
-            aluno.NomePaiAluno = NomePaiAluno.Text;
-            aluno.EmailMaeAluno = EmailMaeAluno.Text;
-            aluno.EmailPaiAluno = EmailPaiAluno.Text;
-            aluno.DataNascAluno = DateTime.Parse(DataNascAluno.Text);
-            aluno.ContatoMaeAluno = ContatoMaeAluno.Text;
-            aluno.ContatoPaiAluno = ContatoPaiAluno.Text;
+                aluno.NomeAluno = NomeAluno.Text;
+                aluno.EnderecoAluno = EnderecoAluno.Text;
+                aluno.NomeMaeAluno = NomeMaeAluno.Text;
+                aluno.NomePaiAluno = NomePaiAluno.Text;
+                aluno.EmailMaeAluno = EmailMaeAluno.Text;
+                aluno.EmailPaiAluno = EmailPaiAluno.Text;
+                aluno.DataNascAluno = DateTime.Parse(DataNascAluno.Text);
+                aluno.ContatoMaeAluno = ContatoMaeAluno.Text;
+                aluno.ContatoPaiAluno = ContatoPaiAluno.Text;
 
-            a.Salvar(aluno);
+                a.Salvar(aluno);
+
+                Response.Write("<script>alert('Salvo com sucesso.');</script>");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
